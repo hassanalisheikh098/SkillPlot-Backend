@@ -59,6 +59,66 @@ JOB_ROLES_DATABASE: Dict[str, List[str]] = {
     "Blockchain Developer": [
         "JavaScript", "TypeScript", "Python", "SQL", "Git", "Node.js"
     ],
+    "SEO Specialist": [
+        "SEO", "SEM", "Google Analytics", "Keyword Research", "Link Building",
+        "Content Marketing", "Google Ads", "A/B Testing", "Copywriting"
+    ],
+    "Digital Marketing Manager": [
+        "Social Media Marketing", "Google Analytics", "Email Marketing", "Content Marketing",
+        "Facebook Ads", "Google Ads", "SEO", "Brand Strategy", "HubSpot", "Mailchimp"
+    ],
+    "HR Manager": [
+        "Recruitment", "Talent Acquisition", "Employee Relations", "Performance Management",
+        "HR Policies", "Onboarding", "Payroll", "Labor Law", "HRIS", "Training & Development"
+    ],
+    "Financial Analyst": [
+        "Financial Analysis", "Financial Modeling", "Excel", "Financial Reporting",
+        "Budgeting", "Forecasting", "GAAP", "Investment Analysis", "Bloomberg Terminal", "SAP"
+    ],
+    "Accountant": [
+        "Accounting", "QuickBooks", "SAP", "Tax Planning", "Auditing", "GAAP",
+        "Cost Accounting", "Financial Reporting", "Excel", "Cash Flow Management"
+    ],
+    "Business Analyst": [
+        "Business Analysis", "Process Improvement", "Stakeholder Management", "Agile",
+        "Jira", "Scrum", "SQL", "Excel", "Power BI", "Communication", "Tableau"
+    ],
+    "Sales Manager": [
+        "Sales", "B2B Sales", "CRM", "Salesforce", "Lead Generation", "Negotiation",
+        "Pipeline Management", "Account Management", "Communication", "Leadership"
+    ],
+    "Customer Success Manager": [
+        "Customer Success", "Client Retention", "CRM", "Communication", "Salesforce",
+        "Upselling", "Account Management", "Customer Support", "Problem Solving"
+    ],
+    "Graphic Designer": [
+        "Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma", "Canva",
+        "Typography", "Color Theory", "Brand Identity", "Logo Design", "Creativity"
+    ],
+    "Video Editor": [
+        "Adobe Premiere Pro", "After Effects", "Video Editing", "Motion Graphics",
+        "Color Theory", "Storytelling", "Adobe Photoshop", "Canva"
+    ],
+    "Content Writer": [
+        "Copywriting", "Content Marketing", "SEO", "Research", "Microsoft Word",
+        "Email Marketing", "Social Media Marketing", "Communication", "Attention to Detail"
+    ],
+    "Operations Manager": [
+        "Operations Management", "Supply Chain Management", "Process Improvement",
+        "Lean", "Six Sigma", "ERP", "Vendor Management", "Procurement", "Leadership", "Excel"
+    ],
+    "Healthcare Administrator": [
+        "Healthcare Administration", "HIPAA", "Electronic Health Records", "EHR",
+        "Medical Coding", "ICD-10", "Public Health", "Communication", "Microsoft Office"
+    ],
+    "Legal Counsel": [
+        "Legal Research", "Contract Drafting", "Compliance", "Corporate Law",
+        "Due Diligence", "Legal Writing", "Contract Law", "Regulatory Affairs", "Communication"
+    ],
+    "Training Specialist": [
+        "Training Facilitation", "Instructional Design", "Curriculum Development",
+        "E-Learning", "LMS", "Coaching", "Presentation Skills", "Communication", "Adult Learning"
+    ],
 }
 
 # Static dummy fallback remote jobs to return if the live API is down or times out
@@ -107,6 +167,36 @@ DUMMY_FALLBACK_JOBS: Dict[str, List[Dict[str, str]]] = {
             "url": "https://remotive.com/fallback-flutter-2",
         },
     ],
+    "SEO": [
+        {
+            "title": "Remote SEO Specialist",
+            "company_name": "GrowthLab Agency",
+            "category": "Marketing",
+            "candidate_required_location": "Worldwide",
+            "salary": "$50,000 - $70,000 USD",
+            "url": "https://remotive.com/fallback-seo-1",
+        }
+    ],
+    "HR": [
+        {
+            "title": "Remote HR Manager",
+            "company_name": "PeopleFirst Corp",
+            "category": "Human Resources",
+            "candidate_required_location": "Worldwide",
+            "salary": "$60,000 - $80,000 USD",
+            "url": "https://remotive.com/fallback-hr-1",
+        }
+    ],
+    "Sales": [
+        {
+            "title": "Remote Sales Manager",
+            "company_name": "Nexus Ventures",
+            "category": "Sales",
+            "candidate_required_location": "Worldwide",
+            "salary": "$70,000 - $95,000 USD",
+            "url": "https://remotive.com/fallback-sales-1",
+        }
+    ],
 }
 
 # Static Course Catalog Map mapping common skills to specific, high-quality course pages
@@ -140,6 +230,51 @@ STATIC_COURSE_CATALOG: Dict[str, Dict[str, str]] = {
         "title": "Flutter & Dart - The Complete Guide",
         "provider": "Udemy",
         "url": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+    },
+    "SEO": {
+        "title": "The Complete SEO Course",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/course/seo-2019-complete-seo-training-traffic-with-windows-mac/",
+    },
+    "Google Analytics": {
+        "title": "Google Analytics for Beginners – Google",
+        "provider": "Google",
+        "url": "https://skillshop.google.com/",
+    },
+    "Financial Modeling": {
+        "title": "Financial Modeling & Valuation Analyst (FMVA)",
+        "provider": "CFI",
+        "url": "https://corporatefinanceinstitute.com/certifications/financial-modeling-valuation-analyst-fmva-program/",
+    },
+    "Excel": {
+        "title": "Microsoft Excel - Excel from Beginner to Advanced",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/",
+    },
+    "Adobe Photoshop": {
+        "title": "Adobe Photoshop CC – Advanced Training Course",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/course/adobe-photoshop-cc-essentials-training-course/",
+    },
+    "Recruitment": {
+        "title": "Recruiting Foundations",
+        "provider": "LinkedIn Learning",
+        "url": "https://www.linkedin.com/learning/recruiting-foundations",
+    },
+    "Salesforce": {
+        "title": "Salesforce for Beginners",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/course/salesforce-lex/",
+    },
+    "Content Marketing": {
+        "title": "Content Marketing Certification",
+        "provider": "HubSpot Academy",
+        "url": "https://academy.hubspot.com/courses/content-marketing",
+    },
+    "Accounting": {
+        "title": "Accounting Fundamentals",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/learn/accounting-fundamentals",
     },
 }
 
