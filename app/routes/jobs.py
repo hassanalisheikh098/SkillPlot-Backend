@@ -93,7 +93,8 @@ JOB_ROLES_DATABASE: Dict[str, List[str]] = {
     ],
     "Graphic Designer": [
         "Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma", "Canva",
-        "Typography", "Color Theory", "Brand Identity", "Logo Design", "Creativity"
+        "Typography", "Color Theory", "Brand Identity", "Logo Design", "Creativity",
+        "Graphic Design", "Creative Design"
     ],
     "Video Editor": [
         "Adobe Premiere Pro", "After Effects", "Video Editing", "Motion Graphics",
@@ -118,6 +119,65 @@ JOB_ROLES_DATABASE: Dict[str, List[str]] = {
     "Training Specialist": [
         "Training Facilitation", "Instructional Design", "Curriculum Development",
         "E-Learning", "LMS", "Coaching", "Presentation Skills", "Communication", "Adult Learning"
+    ],
+    "Store Manager": [
+        "Store Management", "Inventory Management", "POS Systems",
+        "Leadership", "Revenue Generation", "Retail Operations",
+        "Staff Scheduling", "Customer Support", "Loss Prevention",
+        "Communication", "Team Collaboration"
+    ],
+    "Sales Executive": [
+        "Sales", "Client Relations", "Client Handling", "B2B Sales",
+        "Corporate Sales", "Communication", "Negotiation",
+        "Customer Dealing", "Sales Coordination", "CRM",
+        "Business Communication", "Team Collaboration"
+    ],
+    "Administration Officer": [
+        "Office Management", "Documentation", "Record Keeping",
+        "MS Office", "Data Entry", "Communication",
+        "Department Coordination", "Filing", "Report Writing",
+        "Office Coordination", "Multitasking", "Attention to Detail"
+    ],
+    "Admission Counselor": [
+        "Admission Counseling", "Communication", "Client Handling",
+        "Documentation", "Record Keeping", "MS Office",
+        "Interpersonal Skills", "Student Counseling",
+        "Department Coordination", "Presentation Skills"
+    ],
+    "Optometrist": [
+        "Optometry", "Refraction", "Slit-Lamp Examination",
+        "Contact Lens Fitting", "Visual Field Analysis",
+        "Patient Counseling", "Ocular Examinations",
+        "Glaucoma Assessment", "Patient Care",
+        "Clinical Decision Making", "Time Management"
+    ],
+    "Healthcare Business Development Executive": [
+        "Healthcare Business Development", "Communication",
+        "Client Relations", "Business Communication",
+        "Sales", "Documentation", "MS Office",
+        "Professional Outreach", "Negotiation",
+        "Stakeholder Communication", "Presentation Skills"
+    ],
+    "Digital Marketing Specialist": [
+        "Social Media Marketing", "Content Marketing", "SEO",
+        "Google Analytics", "Google Suites", "KPI Analysis",
+        "Campaign Management", "Email Marketing",
+        "Facebook Ads", "Google Ads", "Copywriting",
+        "Brand Management", "Video Blogging"
+    ],
+    "Public Relations Officer": [
+        "Public Relations", "Communication", "Brand Management",
+        "Content Marketing", "Stakeholder Communication",
+        "Social Media Marketing", "Campaign Management",
+        "Media Relations", "Presentation Skills",
+        "Report Writing", "Professional Outreach"
+    ],
+    "Marketing Manager": [
+        "Brand Management", "Campaign Management", "Market Research",
+        "ROI Optimization", "Digital Marketing", "Social Media Marketing",
+        "Content Marketing", "Leadership", "Communication",
+        "Public Relations", "KPI Analysis", "Team Collaboration",
+        "Budget Management", "Email Marketing"
     ],
 }
 
@@ -195,6 +255,46 @@ DUMMY_FALLBACK_JOBS: Dict[str, List[Dict[str, str]]] = {
             "candidate_required_location": "Worldwide",
             "salary": "$70,000 - $95,000 USD",
             "url": "https://remotive.com/fallback-sales-1",
+        }
+    ],
+    "Store Manager": [
+        {
+            "title": "Remote Store Operations Manager",
+            "company_name": "RetailNow Inc",
+            "category": "Retail Management",
+            "candidate_required_location": "Worldwide",
+            "salary": "$55,000 - $75,000 USD",
+            "url": "https://remotive.com/fallback-storemanager-1",
+        }
+    ],
+    "Optometrist": [
+        {
+            "title": "Clinical Optometrist (Telehealth)",
+            "company_name": "VisionCare Remote",
+            "category": "Healthcare",
+            "candidate_required_location": "Worldwide",
+            "salary": "$70,000 - $95,000 USD",
+            "url": "https://remotive.com/fallback-optometrist-1",
+        }
+    ],
+    "Administration": [
+        {
+            "title": "Remote Administration Officer",
+            "company_name": "OfficePro Corp",
+            "category": "Administration",
+            "candidate_required_location": "Worldwide",
+            "salary": "$40,000 - $55,000 USD",
+            "url": "https://remotive.com/fallback-admin-1",
+        }
+    ],
+    "Public Relations": [
+        {
+            "title": "Remote PR Specialist",
+            "company_name": "MediaLink Agency",
+            "category": "Marketing / PR",
+            "candidate_required_location": "Worldwide",
+            "salary": "$55,000 - $75,000 USD",
+            "url": "https://remotive.com/fallback-pr-1",
         }
     ],
 }
@@ -275,6 +375,46 @@ STATIC_COURSE_CATALOG: Dict[str, Dict[str, str]] = {
         "title": "Accounting Fundamentals",
         "provider": "Coursera",
         "url": "https://www.coursera.org/learn/accounting-fundamentals",
+    },
+    "Public Relations": {
+        "title": "Public Relations Fundamentals",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/learn/public-relations",
+    },
+    "Google Suite": {
+        "title": "Google Workspace (G Suite) Certification",
+        "provider": "Google",
+        "url": "https://skillshop.google.com/",
+    },
+    "MS Office": {
+        "title": "Microsoft Office Specialist Certification",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/en-us/certifications/",
+    },
+    "Brand Management": {
+        "title": "Brand Management – Aligning Business, Creative & Digital Strategy",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/learn/brand-management",
+    },
+    "Store Management": {
+        "title": "Retail Management Fundamentals",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/learn/retail-management",
+    },
+    "Patient Care": {
+        "title": "Patient Care Technician Certification Prep",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/learn/patient-care",
+    },
+    "Adobe Illustrator": {
+        "title": "Adobe Illustrator CC – Essentials Training",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/course/adobe-illustrator-cc-essentials-training-course/",
+    },
+    "KPI Analysis": {
+        "title": "KPIs and Business Metrics",
+        "provider": "LinkedIn Learning",
+        "url": "https://www.linkedin.com/learning/kpis-and-business-metrics",
     },
 }
 
